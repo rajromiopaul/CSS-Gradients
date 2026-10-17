@@ -1,206 +1,350 @@
-@font-face {
-    font-family: "BMWTypeNext Pro Regular";
-    src: url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.eot");
-    src: url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/ac95f91c55cc591ecf37a4d136ff8031.svg#BMWTypeNext Pro Regular")format("svg");
-}
-
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: "BMWTypeNext Pro Regular";
 }
 
-section {
-    background-image: linear-gradient(to right, black, transparent), url(https://bmw.scene7.com/is/image/BMW/G70_banner:16to7?fmt=webp-alpha&wid=2560&fit=constrain%2C1);
-    height: 90vh;
-    background-repeat: no-repeat;
-    color: white;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding: 0 96px;
-}
-
-nav {
-    display: flex;
-    height: 84px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 0px;
-}
-
-aside {
-    display: flex;
-    align-items: center;
-}
-
-li {
-    list-style: none;
-
-}
-
-.list ul {
-    display: flex;
-}
-
-.list ul li {
-    padding: 0 12px;
-}
-
-.icon ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.icon ul li {
-    padding: 0 12px;
-}
-
-.action {
-    position: relative;
-}
-
-.hero {
-    display: flex;
-    padding: 20px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.hero-btn:hover {
-    box-shadow: 0px 0px 0px 1px inset;
-}
-
-.card-bg-1 {
-    background-image: linear-gradient(to right, black, transparent), url(https://bmw.scene7.com/is/image/BMW/colorswitch:3to1?fmt=webp-alpha&wid=2560&fit=constrain%2C1);
-    height: 509px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.card-bg-2 {
-    background-image: linear-gradient(to right, black, transparent), url(https://bmw.scene7.com/is/image/BMW/Homepage_x1_Desk_new:3to1?fmt=webp-alpha&wid=1919&fit=constrain%2C1);
-    height: 506px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.card-bg-3 {
-    background-image: linear-gradient(to right, black, transparent), url(https://bmw.scene7.com/is/image/BMW/banner-x6-m60i:3to1?fmt=webp-alpha&wid=1919&fit=constrain%2C1);
-    height: 506px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.card-btn {
-    font-size: 15px;
-    background: transparent;
-    border: 1px solid;
-    font-weight: bold;
-    padding: 18px 120px;
-    border-radius: 4px;
-}
-
-.action-btn {
-    font-size: 15px;
-    background: transparent;
-    border: 1px solid;
-    font-weight: bold;
-    padding: 18px 64px;
-    border-radius: 4px;
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: #111;
     color: white;
 }
 
-.action-btn:hover {
-    box-shadow: 0px 0px 0px 1px inset;
-}
-
-.card-btn:hover {
-    box-shadow: 0px 0px 0px 1px inset;
-}
-
-.offer {
-    display: flex;
-    align-items: center;
-    padding: 0px 100px;
-    justify-content: space-between;
-}
-
-.offer h1 {
-    font-weight: lighter;
-}
-
-.offer pre {
-    margin-top: 12px;
-    margin-bottom: 24px;
-}
-
-.offer p {
-    font-weight: bold;
-}
-
-footer {
-    background-color: #ccc;
-    margin-top: 70px;
-    padding: 0 96px;
-    border-top: 1px solid #a3a3a3;
-    border-bottom: 1px solid #a3a3a3;
-}
-
-footer div {
-    display: flex;
-    justify-content: space-around;
-    padding-right: 650px;
-    align-items: center;
-    height: 100px;
-}
-
-article {
-    background-color: #ccc;
-    padding: 0 96px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-article h1 {
-    font-weight: lighter;
-    margin-bottom: 35px;
-}
-
-article li {
-    margin: 15px 0;
-}
-
-.social {
-    border-bottom: 1px solid #a3a3a3;
-    background-color: #ccc;
-    display: flex;
-    justify-content: end;
-    padding-right: 100px;
-    padding-bottom: 30px;
-}
-
-.social img {
-    width: 30px;
-    margin: 0 5px;
-}
-
-.end {
+h1 {
+    text-align: center;
     margin-bottom: 40px;
-    background-color: #ccc;
-    display: flex;
-    padding: 25px 100px;
 }
 
-.end div {
-    padding-right: 50px;
+h2 {
+    margin-top: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    min-height: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.text-demo {
+    font-size: 45px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.button-area {
+    text-align-last: center;
+    margin: 50px;
+}
+
+.linear-basic {
+    background: linear-gradient(red, blue);
+}
+
+.linear-to-right {
+    background: linear-gradient(to right, red, blue);
+}
+
+.linear-to-left {
+    background: linear-gradient(to left, red, blue);
+}
+
+.linear-to-top {
+    background: linear-gradient(to top, red, blue);
+}
+
+.linear-to-bottom {
+    background: linear-gradient(to bottom, red, blue);
+}
+
+.linear-corner {
+    background: linear-gradient(to bottom right, red, blue);
+}
+
+.linear-corner-2 {
+    background: linear-gradient(to top left, red, blue);
+}
+
+.angle-0 {
+    background: linear-gradient(0deg, red, blue);
+}
+
+.angle-45 {
+    background: linear-gradient(45deg, red, blue);
+}
+
+.angle-90 {
+    background: linear-gradient(90deg, red, blue);
+}
+
+.angle-180 {
+    background: linear-gradient(180deg, red, blue);
+}
+
+.angle-270 {
+    background: linear-gradient(270deg, red, blue);
+}
+
+.angle-turn {
+    background: linear-gradient(0.25turn, red, blue);
+}
+
+.angle-rad {
+    background: linear-gradient(1.5708rad, red, blue);
+}
+
+.angle-grad {
+    background: linear-gradient(100grad, red, blue);
+}
+
+.color-stops {
+    background: linear-gradient(to right,
+            red 0%,
+            orange 25%,
+            yellow 50%,
+            green 75%,
+            blue 100%);
+}
+
+.custom-stops {
+    background: linear-gradient(to right,
+            red 10%,
+            blue 90%);
+}
+
+.hard-stop {
+    background: linear-gradient(to right,
+            red 0%,
+            red 50%,
+            blue 50%,
+            blue 100%);
+}
+
+.transparent-gradient {
+    background: linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 0, 0));
+}
+
+.hex-alpha {
+    background: linear-gradient(to right,
+            #ff0000ff,
+            #ff000000);
+}
+
+.rgb-gradient {
+    background: linear-gradient(to right,
+            rgb(255, 0, 0),
+            rgb(0, 0, 255));
+}
+
+.hsl-gradient {
+    background: linear-gradient(to right,
+            hsl(0, 100%, 50%),
+            hsl(240, 100%, 50%));
+}
+
+.hsla-gradient {
+    background: linear-gradient(to right,
+            hsla(0, 100%, 50%, 1),
+            hsla(240, 100%, 50%, 0));
+}
+
+.multiple-linear {
+    background:
+        linear-gradient(45deg, transparent 40%, white 40%, white 60%, transparent 60%),
+        linear-gradient(-45deg, red, blue);
+}
+
+.radial-basic {
+    background: radial-gradient(red, blue);
+}
+
+.radial-circle {
+    background: radial-gradient(circle, red, blue);
+}
+
+.radial-ellipse {
+    background: radial-gradient(ellipse, red, blue);
+}
+
+.radial-closest-side {
+    background: radial-gradient(closest-side,
+            red,
+            blue);
+}
+
+.radial-farthest-side {
+    background: radial-gradient(farthest-side,
+            red,
+            blue);
+}
+
+.radial-closest-corner {
+    background: radial-gradient(closest-corner,
+            red,
+            blue);
+}
+
+.radial-farthest-corner {
+    background: radial-gradient(farthest-corner,
+            red,
+            blue);
+}
+
+.radial-position {
+    background: radial-gradient(circle at center,
+            red,
+            blue);
+}
+
+.radial-top-left {
+    background: radial-gradient(circle at top left,
+            red,
+            blue);
+}
+
+.radial-bottom-right {
+    background: radial-gradient(circle at bottom right,
+            red,
+            blue);
+}
+
+.radial-percentage {
+    background: radial-gradient(circle at 30% 70%,
+            red,
+            blue);
+}
+
+.radial-stops {
+    background: radial-gradient(circle,
+            white 0%,
+            yellow 20%,
+            orange 40%,
+            red 70%,
+            purple 100%);
+}
+
+.conic-basic {
+    background: conic-gradient(red,
+            yellow,
+            green,
+            blue,
+            red);
+}
+
+.conic-angle {
+    background: conic-gradient(from 45deg,
+            red,
+            yellow,
+            blue);
+}
+
+.conic-position {
+    background: conic-gradient(from 0deg at 30% 30%,
+            red,
+            yellow,
+            blue);
+}
+
+.conic-stops {
+    background: conic-gradient(red 0deg,
+            orange 60deg,
+            yellow 120deg,
+            green 180deg,
+            blue 240deg,
+            purple 300deg,
+            red 360deg);
+}
+
+.repeating-linear {
+    background: linear-gradient(45deg,
+            red 0px,
+            red 20px,
+            blue 20px,
+            blue 40px);
+}
+
+.repeating-radial {
+    background: repeating-radial-gradient(circle,
+            red 0px,
+            red 10px,
+            blue 10px,
+            blue 20px);
+}
+
+.repeating-conic {
+    background: repeating-conic-gradient(red 0deg 10deg,
+            blue 10deg 20deg);
+}
+
+.multiple-gradients {
+    background: radial-gradient(circle at 20% 20%,
+            rgba(255, 255, 255, 0.5),
+            transparent 30%),
+        linear-gradient(135deg,
+            #ff0080,
+            #7928ca);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            purple);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+    border: 5px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(90deg,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            purple) border-box;
+}
+
+.gradient-button {
+    background: linear-gradient(135deg,
+            #ff416c,
+            #ff4b2b);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.gradient-button:hover {
+    background: linear-gradient(135deg,
+            #ff4b2b,
+            #ff416c);
 }
